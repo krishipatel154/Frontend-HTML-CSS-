@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+    <!-- plus icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="container">
+    <div class="header" id="header">
+        <div class="main">
+        <h1>ToDo List</h1>
+        <i class="fa fa-plus" style="font-size:24px" onclick="showhide()"></i>
+    </div>
+    <div id="myInputArea">
+        <input type="text" id="myInput" placeholder="Enter to do here...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+    </div>
+    <ul id="todos">
+        <li>Go to gym</li>
+        <li>Coding</li>
+      </ul>
+    </div>
+      <script src="todolist.js"></script>
+</body>
+</html>
