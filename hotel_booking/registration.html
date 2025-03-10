@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="form-horizontal">
+        <form action="">
+            <ul>
+                <div class="form-control">
+                <li>
+                    <label for="fname">First Name: </label>
+                    <input type="text" class="form-group" name="fname" id="fname">
+                </li>
+            </div>
+            <div class="form-group">
+                <li>
+                    <label for="lname">Last Name: </label>
+                    <input type="text" name="lname" id="lname">
+                </li>
+                </div>
+                <div class="form-group">
+                <li>
+                    <label for="add1">Address1: </label>
+                    <input type="text" name="add1" id="add1">
+                </li>
+                </div>
+                <div class="form-control">
+                <li>
+                    <label for="add2">Address2: </label>
+                    <input type="text" name="add2" id="add2">
+                </li>
+                </div>
+                <li>
+                <label for="city">City: </label>
+                <select name="city" id="city">
+                    <option value="select">Select City</option>
+                    <option value="surat">surat</option>
+                    <option value="ahemdabad">ahemdabad</option>
+                    <option value="vapi">vapi</option>
+                    <option value="mehsana">mehsana</option>
+                </select>
+                </li>
+                <li>
+                    <label for="state">State: </label>
+                    <select name="state" id="state">
+                        <option value="select">Select State...</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="maharastra">Maharastra</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="kolkata">Kolkata</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="zipCode">Zip Code:</label>
+                    <input type="text" name="zipCode" id="zipCode">
+                </li>
+                <li>
+                    <label for="tel">Contect No: </label>
+                    <input type="tel" name="tel" id="tel">
+                </li>
+                <li>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </li>
+                <li>
+                    <label for="checkInDate">Check In Date: </label>
+                    <input type="date" name="checkInDate" id="checkInDate">
+                </li>
+                <li>
+                    <label for="checkInTime">Check In Time: </label>
+                    <input type="time" name="checkInTime" id="checkInTime">
+                </li>
+                <li>
+                    <label for="checkOutDate">Check Out Date: </label>
+                    <input type="date" name="checkOutDate" id="checkOutDate">
+                </li>
+                <li>
+                    <label for="checkOutTime">Check Out Time: </label>
+                    <input type="time" name="checkOutTime" id="checkOutTime">
+                </li>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                  </div>
+            </ul>
+            <div class="d-inline-block p-relative" style="width: 100%; height: 200px;">
+                <div class="d-inline-block p-absolute t-0 b-0 l-0 r-0" style="width: 100%; height: 200px;">
+                    <img alt="map image" src="https://www.cleartrip.com/wp-content/uploads/2020/03/BLR_new-300x225.png" width="30%" height="200px" class="of-cover">
+                </div>
+                <div class="h-100p" style="opacity: 0;">
+                    <div class="d-inline-block bg-grey-05 t-0 b-0 l-0 r-0 ta-center p-relative" style="width: 100%; height: 200px; color: rgb(199, 199, 199); z-index: 2;">
+                        <div class="flex flex-center flex-middle Stencil has-shimmer" style="width: 100%; height: 200px;">
+                            <div>
+                                <svg viewBox="0 0 100 100" class="current-fill" width="40px" height="40px">
+                                    <path fill-rule="evenodd" d="M90.67 84.96H30.696v-8.59l9.227-21.47 13.841 17.18 12.984-13.31 16.694-6.03 7.228 16.11v16.11zm5.521-45.1h-72.35c-2.103 0-3.808 1.8-3.808 4.01v47.11c0 2.21 1.705 4 3.808 4h72.35c2.104 0 3.809-1.79 3.809-4V43.87c0-2.21-1.705-4.01-3.809-4.01zm-10.567-9.02L75.396 2.67C74.641.59 72.425-.52 70.451.21L2.464 25.02c-1.976.72-2.966 2.99-2.211 5.07L11.037 59.8V43.87c0-7.18 5.744-13.03 12.804-13.03h17.964L63.23 15.8l12.399 15.04h9.995z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
