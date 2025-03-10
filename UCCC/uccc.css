@@ -1,0 +1,468 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.act_sect{
+    text-decoration: underline;
+    color: blue;
+}
+.name_sect{
+    text-align: center;
+}
+.news_letter{
+    text-align: right;
+    margin-right: 100px;
+    color: black;
+    text-decoration: none;
+}
+.addmision_guidelines{
+    text-align: right;
+    margin-right: 100px;
+    color: black;
+    text-decoration: none;
+}
+
+.clg_logo{
+    width: 100px;
+    height: 100px;
+}
+nav label img{
+    width: 80px;
+    height: 70px;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline;
+    line-height: 70px;
+    margin: 12px;
+}
+nav div{
+    display: block;
+}
+.nav_area{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+@media (max-width: 1125px) {
+    nav label img{
+        width: 80px;
+        height: 70px;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        display: inline;
+    }
+    nav ul{
+        float: right;
+        margin-right: 20px;
+        display: inline;
+    }
+    nav ul li{
+        display: inline;
+        line-height: 40px;
+        margin: 12px;
+    }
+    nav ul li a{
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+@media (max-width:900px) {
+    nav label img{
+        width: 50px;
+        height: 50px;
+    }
+    nav ul li{
+        display: fixed;
+    }
+    
+}
+/* .aboutus_opt{
+    overflow: auto;
+} */
+.inner_aboutus{
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+}
+nav ul li ul{
+    display: block;
+}
+.about_us:hover + .inner_aboutus{
+    display: block;
+    opacity: 0;
+    transform: scale(.9);
+    position: absolute;
+    visibility: hidden;
+    z-index: 100;
+    background: #fff;
+    transition: all 0.5s;
+}
+/* .navigation_bar ul li>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 300px;
+    transform: scale(.9);
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    width: 250px;
+    visibility: hidden;
+    opacity: 0;
+    background: #fff;
+    z-index: 100;
+    border-bottom: 3px solid;
+} */
+.navigation_bar ul li ul li a{
+    width: 100%;
+    position: relative;
+    color: #363636;
+    padding: 15px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.navigation_bar ul li ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 120%;
+    transform: scale(0.9);
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    width: 250px;
+    visibility: hidden;
+    opacity: 0;
+    background: #fff;
+    z-index: 100;
+    border-bottom: 3px solid;
+    -webkit-box-shadow: inset 0px 2px 3px 0px rgba(50, 50, 50, 0.24);
+    -moz-box-shadow: inset 0px 2px 3px 0px rgba(50, 50, 50, 0.24);
+    box-shadow: inset 0px 2px 3px 0px rgba(50, 50, 50, 0.24);
+    transition: all 0.5s;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+a:-webkit-any-link{
+    cursor: pointer;
+}
+
+/* img slider */
+.carousel-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.slider-carousel {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.slider-carousel img {
+    width: 100%;
+    height: 500px;
+    transition: all 0.3s ease;
+}
+
+.images {
+    display: none;
+}
+.main {
+    display: block;
+}
+
+.image-text {
+    bottom: 0;
+    width: 103%;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.3);
+    height: 35px;
+}
+
+.blank, .blank2{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    padding-top: 100px;
+}
+.blank2{
+    margin-top: 100px;
+}
+.blank{
+    position: absolute;
+}
+.msg_section div{
+    display: inline-block;
+    position: relative;
+}
+.about_clg, .president_msg, .principal_msg{
+    border: 1px solid gray;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px gray;
+    padding: 10px;
+    overflow:hidden;
+    margin-top: 120px;
+}
+.vision_head, .vision_body{
+    text-decoration: none;
+    color: black;
+}
+.vision_body_link{
+    text-decoration: none;
+}
+
+.about_clg{
+    width: 300px;
+    height: 800px;
+    margin-left: 150px;
+    margin-right: 20px;
+    margin-bottom: 140px;
+    border-radius: 10px;
+}
+.president_msg{
+    width: 300px;
+    height: 700px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 250px;
+    border-radius: 10px;
+}
+.president_name{
+    text-decoration: none;
+    color: black;
+}
+.principal_msg{
+    width: 300px;
+    height: 950px;
+    margin-right: 140px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.principal_msg_head, .details{
+    color: black;
+    text-decoration: none;
+}
+.about_clg_btn, .president_msg_btn, .principal_msg_btn{
+    background-color: darkblue;
+    color: white;
+    border-color: darkblue;
+    height: 30px;
+    width: 120px;
+}
+
+/* enotice and useful links department */
+
+.blank2{
+    position: absolute;
+}
+.enotice_link div{
+    display: inline-block;
+    position: relative;
+}
+.useful_links, .enotice{
+    width: 350px;
+    height: 600px;
+    border: 1px solid gray;
+    margin-top: 220px;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.enotice{
+    margin-left: 290px;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+.useful_links{
+    margin-right: 290px;
+    margin-left: 20px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: content-box;
+    border-radius: 2px;
+}
+.enotice_img , .useful_links_img{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 20px;
+}
+.enotice_title{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.links_title{
+    margin-left: 90px;
+    margin-right: 110px;
+}
+.more_notice_btn, .more_links_btn{
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+}
+.notice_link_sec{
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-right: 110px;
+    height: 40px;
+    width: 150px;
+}
+
+.items{
+    color: white;
+    text-decoration: none;
+}
+.news_list{
+    list-style: none;
+}
+
+footer{
+    background-color: black;
+    height: 500px;
+    width: 100%;
+}
+.name{
+    color: white;
+    margin-left: 100px;
+}
+/* .name_sce{
+    margin-top: 10000px;
+} */
+.address{
+    color: gray;
+    margin-left: 100px;
+}
+.contect_no{
+    color: gray;
+}
+.contect_sec{
+    margin-left: 100px;
+}
+
+/* .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  } */
+
+  .social_icon li a{
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid gray;
+    color: gray;
+    font-size: 20px;
+  }
+
+  label ul li{
+    display: inline-block;
+  }
+
+  .news_title{
+    color: white;
+  }
+
+  footer article{
+    display: inline-block;
+  }
+  .marquee_item{
+    color: white;
+  }
+  .marquee_div{
+    border: 3px solid white;
+    border-style: dotted;
+    width: 300px;
+    height: 300px;
+    margin-top: 22px;
+  }
+  .footer{
+    margin-right: 50px;
+    margin-top: 100px;
+  }
+  .news_sec{
+    margin-left: 50px;
+  }
+
+  /* css for visionmission page (about clg)*/
+  .goal-obj{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    padding: auto;
+    overflow:hidden;
+  }
+
+  .goal-obj_details{
+    width: 100%;
+    height: 600px;
+    background-color: #f5f5f5;
+    margin: 0;
+  }
+
+  .goal-obj_sec2{
+    width: 100%;
+    max-width: 800px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+  }
+
+  .goal-obj_sec1{
+    width: 100%;
+    padding: 20px 300px;
+    max-width: 800px;
+    margin-left: 200px;
+  }
