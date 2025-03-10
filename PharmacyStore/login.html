@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KP Pharmacy - Login form</title>
+  <link rel="stylesheet" href="login.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 50%;
+      box-shadow: 2px 2px 2px 2px gray;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      margin-top: 150px;
+    }
+    .heading {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 36px;
+      padding: 20px;
+      text-align: center;
+    }
+    .label {
+      font-size: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      margin: 10px;
+      padding: 5px;
+    }
+    .input {
+      width: 20%;
+      height: 30px;
+      width: 95%;
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 18px;
+      margin-left: 15px;
+    }
+    .btn_sect{
+      text-align: center;
+    }
+    .submit_btn , .reset_btn{
+      font-size: 18px;
+      height: 30px;
+      width: 15%;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body class="text-center">
+  <form action="">
+    <div class="container">
+      <h1 class="heading">Login Here</h1>
+      <label for="email" class="label">Email: </label>
+      <input type="email" id="email" class="input">
+      <label for="psw" class="label">Password: </label>
+      <input type="password" name="psw" id="psw" class="input">
+      <label for="rptPsw" class="label">Repeat Password: </label>
+      <input type="password" name="rptPsw" id="rptPsw" class="input">
+      <div class="btn_sect">
+        <input type="button" value="Submit" class="submit_btn">
+        <input type="button" value="Reset" class="reset_btn">
+      </div>
+    </div>
+  </form>
+</body>
+</html>

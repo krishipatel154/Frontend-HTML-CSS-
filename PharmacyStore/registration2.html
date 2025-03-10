@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP pharmacy - Registration Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 15px;
+            box-shadow: 5px 5px 5px 5px gray;
+        }
+
+        .heading {
+            font-size: 36px;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .label{
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            margin: 5px;
+            padding: 10px;
+        }
+        .input{
+            width: 20%;
+            height: 30px;
+            width: 95%;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 18px;
+            margin-left: 15px;
+        }
+        .btn_sect{
+            text-align: center;
+        }
+        .submit_btn , .reset_btn{
+            height: 30px;
+            width: 15%;
+            font-size: 20px;
+            padding: 2px;
+            margin: 10px;
+        }
+        .signin_link{
+            text-align: center;
+        }
+        .signin_link p{
+            padding-top: 5px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="heading">Registration Form</h1>
+            
+            
+                <label for="fname" class="label">First Name: </label>
+                <input type="text" placeholder="enter name here" id="fname" class="input">
+            
+                <label for="lname" class="label">Last Name: </label>
+                <input type="text" placeholder="enter name here" id="lname" class="input">
+            
+                <label for="email" class="label">Email: </label>
+                <input type="email" placeholder="enter name here" id="email" class="input">
+            
+                <label for="contectNo" class="label">Contect No: </label>
+                <input type="number" placeholder="enter name here" id="contectNo" class="input">
+            
+                <label for="country" class="label">Country: </label>
+                <input type="text" placeholder="enter name here" id="country" class="input">
+            
+                <label for="city" class="label">City: </label>
+                <input type="text" placeholder="enter name here" id="city" class="input">
+            
+                <div class="btn_sect">
+                <input type="button" value="Submit" class="submit_btn">
+                <input type="reset" value="Reset" class="reset_btn">
+            </div>
+            <div class="signin_link">
+            <p>Already have Account?</p>
+            <a href="login.html"><p>Sign in</p></a>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
