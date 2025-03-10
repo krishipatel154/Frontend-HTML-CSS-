@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Color Changer</h1>
+        <p>Click any button to change backGround color:-</p>
+        <span class="btn1" id="btn1" onclick="btn1()">btn1</span>
+        <button class="btn2" onclick="btn2()">btn2</button>
+        <button class="btn3" onclick="btn3()">btn3</button>
+        <button class="btn4" onclick="btn4()">btn4</button>
+    </div>
+    <style>
+        *{
+            color: rgb(19, 2, 2);
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+        }
+        .btn1{
+            background-color: white;
+        }
+        .btn2{
+            background-color: rgb(185, 28, 101);
+        }
+        .btn3{
+            background-color: rgb(158, 74, 18);
+        }
+        .btn4{
+            background-color: rgb(50, 107, 12);
+        }
+    </style>
+    <script>
+        function btn1() {
+            let color = document.getElementById('btn1').style.backgroundColor
+            document.body.style.backgroundColor = color
+        }
+        function btn2() {
+            document.body.style.backgroundColor = "rgb(185, 28, 101)"
+        }
+        function btn3() {
+            document.body.style.backgroundColor = "rgb(158, 74, 18)"
+        }
+        function btn4() {
+            document.body.style.backgroundColor = "rgb(50, 107, 12)"
+        }
+    </script>
+</body>
+</html>
