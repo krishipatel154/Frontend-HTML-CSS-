@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="What is Netflix? Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of ...">
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="icon" href="Images/titlebar-icon.png" type="image/x-icon" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-sect">
+            <div class="box"></div>
+        </div>
+
+        <div class="inner-header-sect">
+            <div class="main-nav">
+                <nav>
+                    <div class="logo-sect">
+                        <img src="Images/Netflix-Logo.png" alt="" class="main-logo">
+                    </div>
+                    <div class="right-side-nav">
+                        <div class="lang-select-sect">
+                            <label for="lang-select"></label>
+                            <select name="lang-selection" id="lang-select" class="lang-selection">
+                                <option value="eng" lang="en">English</option>
+                                <option value="hindi" lang="hi">हिन्दी</option>
+                            </select>
+                        </div>
+                        <div class="signin-sect">
+                            <button class="signin-btn">Sing In</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="main-section">
+                <h1 class="main-section-heading">Unlimited movies, TV shows and more</h1>
+                <p class="main-section-para">Watch anywhere. Cancle anything.</p>
+                <h2 class="enter-email-heading">Ready Watch?Enter email to create or restart your membership.</h2>
+                <!-- <div class="email-section">
+                    <label for="user-email" class="user-email-label">Email address</label>
+                    
+                    <div class="email-input-section">
+                        <input type="email" maxlength="50" minlength="5" autocomplete="email" id="user-email"
+                            class="user-email-input">
+                        
+                        <div aria-hidden="true" class="email-hidden-area"></div>
+                    </div>
+                </div> -->
+                <!-- <label for="user-email" class="user-email-label">Email address</label> -->
+                <input type="email" maxlength="50" minlength="5" autocomplete="email" id="user-email"
+                    class="user-email-input" placeholder="Email address" style="color: white;padding-left: 20px;font-size: 20px;">
+                <button class="get-started-btn">Get Started ></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="first-ruler"></div>
+
+        <div class="main-sect1">
+            <div class="main-sect1-left">
+                <div class="main-sect1-inner-left">
+                    <h1>Enjoy on your TV</h1>
+                    <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                </div>
+            </div>
+            <div class="main-sect1-right">
+                <div class="main-sect1-right-image">
+                    <img src="Images/tv.png" alt="">
+                    <div class="main-sect1-right-video">
+                        <video src="videos/video1.m4v" autoplay muted loop playsinline></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-ruler"></div>
+
+        <div class="main-sect2">
+            <div class="main-sect2-left">
+                <div class="main-sect2-left-image">
+                    <img src="Images/main-sect2-img1.jpg" alt="">
+                    <div class="main-sect2-inner-left">
+                        <div class="main-sect2-inner-left-div1">
+                            <img src="Images/main-sect2-img2.png" alt="">
+                        </div>
+                        <div class="main-sect2-inner-left-div2">
+                            <p>Stranger Things</p>
+                            <p>Downloading...</p>
+                        </div>
+                        <div class="main-sect2-inner-left-div3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-sect2-right">
+                <div class="main-sect2-inner-right">
+                    <h1>Download your shows to watch offline</h1>
+                    <p>Save your favourites easily and always have something to watch.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="third-ruler"></div>
+
+        <div class="main-sect3">
+            <div class="main-sect3-left">
+                <div class="main-sect3-inner-left">
+                    <h1>Watch everywhere</h1>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                </div>
+            </div>
+            <div class="main-sect3-right">
+                <div class="main-sect3-right-image">
+                    <img src="Images/main-sect3-img.png" alt="">
+                    <div class="main-sect3-right-video">
+                        <video src="videos/main-sect3-video.m4v" loop autoplay muted></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forth-ruler"></div>
+
+        <div class="main-sect4">
+            <div class="main-sect4-left">
+                <div class="main-sect4-inner-left">
+                    <img src="Images/main-sect4-img.png" alt="">
+                </div>
+            </div>
+            <div class="main-sect4-right">
+                <div class="main-sect4-inner-right">
+                    <h1>Create profiles for kids</h1>
+                    <p>Send children on adventures with their favourite characters in a space made just for them—free
+                        with your membership.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fifth-ruler"></div>
+
+        <div class="questions-sect" id="questions-sect">
+            <div class="questions-inner-sect" id="questions-inner-sect">
+                <h2>Frequently Asked Questions</h2>
+                <div class="frequently-asked-question" id="frequently-asked-question">
+                    <ul id="frequently-asked-questions-list">
+                        <li class="questions" id="que1">
+                            <button onclick="que1_details()">
+                                <span>What is Netflix?</span>
+                                <svg id="plus-icon1" xmlns="http://www.w3.org/2000/svg" fill="none" width="36"
+                                    height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true"
+                                    class="plus-icon elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                            <p id="que1-para" class="ques-para que1-para"></p>
+                        </li>
+                        <li class="questions" id="que2">
+                            <button onclick="que2_details()">
+                                <span>How much does netflix cost?</span>
+                                <svg id="plus-icon2" xmlns="http://www.w3.org/2000/svg" fill="none" width="36"
+                                    height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true"
+                                    class="elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                            <p id="que2-para" class="ques-para que2-para"></p>
+                        </li>
+                        <li onclick="fun1()" class="questions" id="que3">
+                            <button onclick="que3_details()">
+                                <span>Where can i watch?</span>
+                                <svg id="plus-icon3" xmlns="http://www.w3.org/2000/svg" fill="none" width="36"
+                                    height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true"
+                                    class="elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                            <p id="que3-para" class="ques-para que3-para"></p>
+                        </li>
+                        <li class="questions" id="que4">
+                            <button onclick="que4_details()">
+                                <span>How do i cancle?</span>
+                                <svg id="plus-icon4" xmlns="http://www.w3.org/2000/svg" fill="none" width="36"
+                                    height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true"
+                                    class="elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                            <p id="que4-para" class="ques-para que4-para"></p>
+                        </li>
+                        <li class="questions" id="que5">
+                            <button onclick="que5_details()">
+                                <span>What can i watch on Netflix?</span>
+                                <svg id="plus-icon5" xmlns="http://www.w3.org/2000/svg" fill="none" width="36"
+                                    height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true"
+                                    class="elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                            <p id="que5-para" class="ques-para que5-para"></p>
+                        </li>
+                        <li class="questions" id="que6">
+                            <button onclick="que6_details()">
+                                <span>Is Netflix good for kids?</span>
+                                <svg id="plus-icon6" xmlns="http://www.w3.org/2000/svg" fill="none" width="36"
+                                    height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true"
+                                    class="elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                            <p id="que6-para" class="ques-para que6-para"></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="questions-inner-sect2">
+                    <h2>Ready Watch?Enter email to create or restart your membership.</h2>
+                    <!-- <div class="email-section">
+                        <label for="user-email" class="user-email-label">Email address</label>
+                        
+                        <div class="email-input-section">
+                            <input type="email" maxlength="50" minlength="5" autocomplete="email" id="user-email"
+                                class="user-email-input">
+                            
+                            <div aria-hidden="true" class="email-hidden-area"></div>
+                        </div>
+                    </div> -->
+                    <!-- <label for="user-email" class="user-email-label">Email address</label> -->
+                     <div class="email-section2">
+                     <div>
+                    <input type="email" maxlength="50" minlength="5" autocomplete="email" id="user-email"
+                        placeholder="Email address">
+                    </div>
+                    <div>
+                        <button>Get Started ></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sixth-ruler"></div>
+
+    </main>
+
+    <footer>
+        <div class="footer-sect">
+            <div class="main-footer">
+                <div class="footer-sect1">
+                    Questions? Call
+                    <a href="tel:000-800-919-1694">000-800-919-1694</a>
+                </div>
+                <div class="footer-sect2">
+                    <ul>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1"
+                                href="https://help.netflix.com/support/412">FAQ</a></li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1"
+                                href="https://help.netflix.com">Help Centre</a></li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1" href="/youraccount">Account</a>
+                        </li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1"
+                                href="https://media.netflix.com/">Media Centre</a></li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1"
+                                href="http://ir.netflix.com/">Investor Relations</a></li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1"
+                                href="https://jobs.netflix.com/jobs">Jobs</a></li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1" href="/watch">Ways to Watch</a>
+                        </li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1"
+                                href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1"
+                                href="https://help.netflix.com/legal/privacy">Privacy</a></li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1" href="#">Cookie Preferences</a>
+                        </li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1"
+                                href="https://help.netflix.com/legal/corpinfo">Corporate Information</a></li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1"
+                                href="https://help.netflix.com/contactus">Contact Us</a></li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1" href="https://fast.com">Speed
+                                Test</a></li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1"
+                                href="https://help.netflix.com/legal/notices">Legal Notices</a></li>
+                        <li><a role="link" data-uia="footer-link" target="_self"
+                                class="e1xphksk0 default-ltr-cache-ncd99a e1ff4m3w1"
+                                href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a></li>
+                    </ul>
+                </div>
+                <div class="footer-sect3">
+                    <!-- <div role="img" aria-hidden="true" class="footer-inner-sect3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="16" height="16" viewBox="0 0 16 16" role="img" data-icon="LanguagesSmall" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg></div> -->
+                    <select id="lang-select" name="LanguageSelect" data-uia="language-picker" class="lang-select">
+                        <option lang="en" label="English" value="en-IN" selected="">English</option>
+                        <option lang="hi" label="हिन्दी" value="hi-IN">हिन्दी</option>
+                    </select>
+                </div>
+                <div class="footer-sect4">Netflix India</div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
